@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>The Poet's Corner</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="profile-body">
+  <h1>-Welcome to the Poet's Corner-</h1>
+  <h3>Got a poem and need feedback? Share it with our community below!</h3>
+  <h2>Add your poem here:</h2>
+
+  <form class="createPoem" action="/poem" method="POST">
+    <input class="poemBox" type="text" placeholder="Write your poem here..." name="poem">
+    <input textmode="MultiLine" class="btmBox" type="text" placeholder="Name/Pseudonym" name="name">
+    <button type="submit">Post</button>
+  </form>
+
+
+  <h4>-Poems-</h4>
+  <div class="poemContainer">
+    <ul class="poems">
+      <% poem.forEach((each) => { %>
+        <li class="poems">
+          <h3 class="poem"><%=each.poem%></h3><span class="datrash" style="cursor:pointer">🗑️</span>
+          <i><%=each.name%></i><br>
+          <span>Comments:</span>
+          <ul>
+            <% each.comment.forEach( thisComment => { %>
+              <p class="poemAns" style="display:inline"><%= thisComment %></p>
+              <br>
+            <% }) %>
+          </ul>
+        <input class="comInput" type="text" placeholder="comment" name="comment">
+        <button class="comBtn" type="submit">Submit</button>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>

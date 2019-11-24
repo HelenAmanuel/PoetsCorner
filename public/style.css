@@ -1,0 +1,153 @@
+body{
+    font-family:monospace;
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color: black;
+  color: white;
+  /* background-color:#f79a95; */
+}
+img{
+  height: 200px;
+}
+
+h1 {
+  font-family:monospace;
+  font-size: 70px;
+  color: white;
+}
+
+tr{
+  width: 100%;
+  margin: 0 5% 0 5%;
+}
+.topRow{
+  width:20%;
+  text-align: center;
+  border: 1px solid gray;
+  margin: 0 2% 0 2%;
+  background-color: lightgray;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.topRow2{
+  background-color: black;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.fa-trash, .fa-thumbs-up{
+  color: white;
+}
+input {
+  width:20%;
+}
+
+/* INDEX . EJS */
+
+.index-body {
+  background-image: url(img/poetImg1.png);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: monospace;
+}
+.profile-body, h3,h4,h2,ul,li,p,input,button{
+font-family: monospace;
+}
+.createPoem{
+width:100%;
+
+}
+.poemBox{
+  width: 50%;
+  height: 100px;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-vEcwool5y7utd8AuVgSFAHaEK%26pid%3DApi&f=1);
+  border: 2px solid red;
+}
+.poem{
+  width:50%;
+}
+.btmBox{
+width:50%;
+border: 2px solid red;
+}
+.poemAns{
+  color: red;
+  text-align: right;
+}
+
+.index-h1{
+  margin: 0 0 0 0;
+}
+.btn{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.jumbotron.text-center {
+  background-color: transparent;
+  text-align: left;
+  padding: 0;
+  margin-top: -30px;
+  padding-left: 0;
+}
+.container{
+  text-align: left;
+}
+.text-center{
+padding: 0;
+}
+  /* GLOBAL STYLES */
+.index-body {
+  /* background: #333; */
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+/* CONNECT LOCAL --------------- */
+
+.connect-container{
+  background-color: transparent;
+}
+
+.connect-body{
+background-color: black;
+}
+.connect-title{
+  color: white;
+}
+.rupi{
+  font-size: 12px;
+  font-style: italic;
+  font-family: garamond;
+}
